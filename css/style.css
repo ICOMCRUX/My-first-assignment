@@ -4,21 +4,40 @@
     box-sizing: border-box;
 }
 
+body{
+    /* padding: 30px; */
+    align-items: center;
+    background-color:aliceblue;
+}
+
 a{
     text-decoration: none;
 }
+
 nav{
-    background-color: rgb(16, 236, 200);
+    background-color: gainsboro;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.0%;
+    padding: 20px;
+    margin-top: 0%;
+}
+
+
+nav button{
+    all: unset;
+    padding: 10px 10px;
+    border-radius: 27px;
+    border: 1.5px solid black;
 }
 
 .div1{
     display: flex;
     align-items: center;
     gap: 30px;
+}
+.div1 .b{
+    display: none;
 }
 
 .div1 ol{
@@ -27,9 +46,131 @@ nav{
     list-style:  none;
     gap: 30px;
 }
+
 .div2{
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     gap: 20px;
+}
+
+.div3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px;
+}
+.div3 h1{
+    font-size: 65px;
+    padding-top: 5px 0px 50px 0px;
+}
+.div3 p{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.div3img{
+    width: 31%;
+}
+.div3 button{
+    font-size: 22px;
+    padding: 7px;
+}
+.div3 .logos img{
+    width: 18%;
+    padding-top: 10%;
+}
+.div3 .gng{
+    width: 50%;
+
+}
+
+
+@media screen and (max-width:992px){
+    .div3img{
+        width: 46%;
+    }
+    .div3 h1{
+        font-size: 40px;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .div2{
+        display: none;
+    }
+    .div1{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .div3 button{
+        font-size: 12px;
+        padding: 7px;
+    }
     
+}
+@media screen and (max-width:576px) {
+    .div3 h1{
+        font-size: 25px;
+        padding-top: 5px 0px 50px 0px;
+    }
+    .div3 p{
+        font-size: 16px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .div1 ol{
+        display: flex;
+        align-items: center;
+        list-style:  none;
+        gap: 30px;
+        font-size: 14px;
+    }
+
+
+}
+@media screen and (max-width:375px) {
+    .div1 .b{
+        display: block;
+    }
+    .div1 ol{
+        display: none;
+        align-items: center;
+        list-style:  none;
+        gap: 30px;
+        font-size: 14px;
+    }
+    .div3{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 30px;
+    }
+    .div3img{
+        width: 100%;
+    }
+    .div3 h1{
+        font-size: 25px;
+        padding: 10%;
+    }
+    .div3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+    .div3 .gng{
+        width: 90%;
+    
+    }
+    .div3 .logos img{
+        width: 22%;
+        padding-top: 10%;
+    }
 }
